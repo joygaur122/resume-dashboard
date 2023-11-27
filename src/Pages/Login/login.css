@@ -1,0 +1,139 @@
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-main {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-main h1 {
+    font-size: 45px;
+    color: var(--skyblue);
+}
+.login-main h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+}
+.login-main p {
+    margin-bottom: 20px;
+}
+.login-main input {
+    width: 80%;
+    height: 60px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+}
+.login-main label {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 80%;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.login-main button {
+    width: 80%;
+    padding: 20px;
+    background-color: var(--skyblue);
+    border: 1px solid var(--skyblue);
+    color: var(--white);
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500
+}
+.login-main h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+.register {
+    width: 100%;
+    display: flex;
+
+}
+.register-main {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.register-main h1 {
+    font-size: 45px;
+    color: var(--skyblue);
+}
+.register-main h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.register-main p {
+    margin-bottom: 20px;
+}
+.register-main input {
+    width: 80%;
+    height: 60px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+}
+.register-main label {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 80%;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.register-main button {
+    width: 80%;
+    padding: 20px;
+    background-color: var(--skyblue);
+    border: 1px solid var(--skyblue);
+    color: var(--white);
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500
+}
+.register-main h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+@media(max-width:650px) {
+    .register-main {
+        width: 100%;
+    }
+.register-main h2 {
+        text-align: center;
+    }
+}
+.Adduser {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: -40vh;
+}

@@ -1,0 +1,22 @@
+:root{
+  --skyblue : #3999e5;
+  --text-color: #7e909f;
+  --white: white;
+  --center-box: #f5f9fa;
+  --black: black;
+  --green: green;
+  --pink: #ca1480;
+}
+
+.app{
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}

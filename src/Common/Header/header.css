@@ -1,0 +1,36 @@
+.header{
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+}
+.header-logo h2{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--skyblue);
+    font-weight: 700;
+}
+.header .profile img{
+width: 50px;
+border-radius: 50px;
+cursor: pointer;
+}
+.header .profile{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+   
+}
+.header .profile p{
+    font-size: 18px;
+    font-weight: 500;
+}
+@media(max-width:650px){
+    .header{
+        padding: 20px;
+    }
+}
