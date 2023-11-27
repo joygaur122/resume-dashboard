@@ -15,7 +15,7 @@ const ResumeData = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("authToken");
-
+    console.log("he;");
     const getuser = async () => {
       try {
         await axios
