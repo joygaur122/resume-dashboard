@@ -8,6 +8,7 @@ import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import fetchUser from "../../Reducers/authActions";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -29,7 +30,7 @@ const Login = () => {
       },
     });
   };
-
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -47,9 +48,9 @@ const Login = () => {
         const token = response.data.token;
         localStorage.setItem("authToken", token);
         dispatch(fetchUser());
-        // if (response.status === 200) {
-        //   window.location.href = "/dashboard";
-        // }
+        if (response.status === 200) {
+          navigate("/dashboard");
+        }
       })
       .catch((error) => {
         console.log(error);
@@ -62,7 +63,7 @@ const Login = () => {
 
   const handleRegisterSubmit = async (e) => {
     e.preventDefault();
-
+    navigate("/dashboard");
     // Create a request body object
     const requestBody = {
       email: registermail,
@@ -135,8 +136,7 @@ const Login = () => {
     <div>
       <ToastContainer />
       <motion.div variants={divVar} initial="hidden" animate="visible">
-        <Header />
-        <form action="" onSubmit={handleSubmit}>
+        <form action="">
           <div className="login">
             <div className="login-main">
               <h1>API</h1>
@@ -154,7 +154,7 @@ const Login = () => {
                 placeholder="********"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <button>Log In</button>
+              <button onClick={handleSubmit}>Log In</button>
               <h3 onClick={showRegiter}>Want to Regiter ?</h3>
             </div>
           </div>

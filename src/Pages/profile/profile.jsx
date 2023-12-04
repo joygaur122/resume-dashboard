@@ -116,7 +116,6 @@ const Profile = () => {
   };
   return (
     <>
-      <Header />
       <motion.div variants={divVar} initial="hidden" animate="visible">
         <div className="main">
           <div className="profile-btn">
@@ -133,7 +132,8 @@ const Profile = () => {
                   className="user-status"
                   onClick={() => {
                     deleteUser(data.userid, data.name);
-                  }}>
+                  }}
+                >
                   Delete
                 </button>
               </div>
@@ -181,7 +181,8 @@ const Profile = () => {
                 className="mapping-btns"
                 onClick={() => {
                   navigateToTemplate(item);
-                }}>
+                }}
+              >
                 {item}
               </button>
             );

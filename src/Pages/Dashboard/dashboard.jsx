@@ -137,13 +137,13 @@ const Dashboard = () => {
 
   return (
     <>
-      <Header />
       <motion.div
         variants={divVar}
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="dashboard-main">
+        className="dashboard-main"
+      >
         <Sidebar tabCompose={tabCompose} compose={compose} />
         <div className={compose ? "composed-center" : "dashboard-center"}>
           <h1>
@@ -175,7 +175,8 @@ const Dashboard = () => {
             variants={mobVar}
             initial="hidden"
             animate="visible"
-            className="mob-leftside">
+            className="mob-leftside"
+          >
             <FaX onClick={mobileCompose} />
             <div className="leftside-con">
               <Link to="/">
@@ -202,7 +203,8 @@ const Dashboard = () => {
               <button
                 onClick={() => {
                   logout();
-                }}>
+                }}
+              >
                 <FaRightFromBracket />
                 <h2>Logout</h2>
               </button>

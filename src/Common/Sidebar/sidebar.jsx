@@ -9,6 +9,7 @@ import {
   FaArrowRight,
   FaArrowLeft,
   FaUsers,
+  FaPlus,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -47,23 +48,16 @@ const Sidebar = (props) => {
           <h2> Templates</h2>
         </Link>
         <Link to="/add-user">
-          +<h2> Add User</h2>
+          <FaPlus /> <h2> Add User</h2>
         </Link>
       </div>
 
       <div className="leftside-secondcon">
-        <Link>
-          <FaRegSun />
-          <h2>Settings</h2>
-        </Link>
-        <Link>
-          <FaQuestion />
-          <h2>Help Center</h2>
-        </Link>
         <button
           onClick={() => {
             logout();
-          }}>
+          }}
+        >
           <FaRightFromBracket />
           <h2>Logout</h2>
         </button>

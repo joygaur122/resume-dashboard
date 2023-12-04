@@ -67,13 +67,13 @@ const ResumeData = () => {
   };
   return (
     <div>
-      <Header />
       <motion.div
         variants={divVar}
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="data-main">
+        className="data-main"
+      >
         <div className="data-btn">
           <Link to="/dashboard">
             <button>Return To Dashboard</button>

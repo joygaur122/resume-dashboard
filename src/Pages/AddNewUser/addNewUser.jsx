@@ -111,7 +111,8 @@ const AddNewUser = () => {
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="Adduser">
+        className="Adduser"
+      >
         <motion.form initial="hidden" animate="visible" action="">
           <div className="register">
             <div className="register-main">

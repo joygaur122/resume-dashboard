@@ -120,13 +120,13 @@ const Templates = () => {
   };
   return (
     <>
-      <Header />
       <motion.div
         variants={divVar}
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="sites-main">
+        className="sites-main"
+      >
         <Sidebar compose={compose} tabCompose={tabCompose} />
         <div className={compose ? "sites-composed-center" : "sites-center"}>
           <h1>
@@ -156,7 +156,8 @@ const Templates = () => {
                           <button
                             onClick={() => {
                               navigateToTemplate(i.templateid);
-                            }}>
+                            }}
+                          >
                             Get Info
                           </button>
                         </td>
@@ -173,7 +174,8 @@ const Templates = () => {
             variants={mobVar}
             initial="hidden"
             animate="visible"
-            className="mob-leftside">
+            className="mob-leftside"
+          >
             <FaX onClick={mobileCompose} />
             <div className="leftside-con">
               <Link to="/dashboard">

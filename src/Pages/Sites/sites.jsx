@@ -121,13 +121,13 @@ const Sites = () => {
   };
   return (
     <>
-      <Header />
       <motion.div
         variants={divVar}
         initial="hidden"
         animate="visible"
         exit="exit"
-        className="sites-main">
+        className="sites-main"
+      >
         <Sidebar compose={compose} tabCompose={tabCompose} />
         <div className={compose ? "sites-composed-center" : "sites-center"}>
           <h1>
@@ -160,7 +160,8 @@ const Sites = () => {
                           <button
                             onClick={() => {
                               deleteUser(i.userid, i.name);
-                            }}>
+                            }}
+                          >
                             <FaTrashCan
                               style={{
                                 backgroundColor: "var(--pink)",
@@ -172,7 +173,8 @@ const Sites = () => {
                           <button
                             onClick={() => {
                               navigateToUser(i.userid);
-                            }}>
+                            }}
+                          >
                             Get Info
                           </button>
                         </td>
@@ -189,7 +191,8 @@ const Sites = () => {
             variants={mobVar}
             initial="hidden"
             animate="visible"
-            className="mob-leftside">
+            className="mob-leftside"
+          >
             <FaX onClick={mobileCompose} />
             <div className="leftside-con">
               <Link to="/dashboard">

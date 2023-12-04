@@ -1,139 +1,144 @@
 .dashboard-leftside {
-    width: 15%;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 300ms ease-in-out;
-    z-index: 100;
-        position: relative;
+  width: 15%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 300ms ease-in-out;
 }
 .composed {
-    width: 8%;
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 300ms ease-in-out;
+  width: 8%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms ease-in-out;
 }
 
 .leftside-firstcon {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .composed-firstcon {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .dashboard-leftside a {
-    display: flex;
-    align-items: center;
-    color: var(--black);
-    padding: 10px;
-    gap: 10px;
-    border-radius: 8px;
-    font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  padding: 10px;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 18px;
 }
 .dashboard-leftside a:hover {
-    color: var(--white);
-    background-color: var(--skyblue);
+  color: var(--white);
+  background-color: var(--skyblue);
+  text-decoration: none;
 }
 .dashboard-leftside button {
-    display: flex;
-    align-items: center;
-    color: var(--black);
-    padding: 10px;
-    gap: 10px;
-    border-radius: 8px;
-    font-size: 20px;
-    border: 1px solid transparent;
-    background-color: transparent;
-    cursor: pointer;
-    flex-wrap: wrap;
-
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  padding: 10px;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  flex-wrap: wrap;
 }
 
 .dashboard-leftside button:hover {
-    color: var(--white);
-    background-color: var(--skyblue);
+  color: var(--white);
+  background-color: var(--skyblue);
 }
 
 .composed button {
-    display: flex;
-    align-items: center;
-    color: var(--black);
-    padding: 10px 0px;
-    gap: 10px;
-    border-radius: 8px;
-    font-size: 22px;
-    width: 100%;
-    border: 1px solid transparent;
-    background-color: transparent;
-    cursor: pointer;
-    justify-content: center;
-
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  padding: 10px 0px;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 22px;
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  justify-content: center;
 }
 .composed button:hover {
-    color: var(--white);
-    background-color: var(--skyblue);
+  color: var(--white);
+  background-color: var(--skyblue);
 }
 .composed a {
-    display: flex;
-    align-items: center;
-    color: var(--black);
-    padding: 10px;
-    gap: 10px;
-    border-radius: 8px;
-    font-size: 22px;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--black);
+  padding: 10px;
+  gap: 10px;
+  border-radius: 8px;
+  font-size: 22px;
+  width: 100%;
 }
 .composed a:hover {
-    color: var(--white);
-    background-color: var(--skyblue);
+  color: var(--white);
+  background-color: var(--skyblue);
 }
 .leftside-firstcon h2 {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .composed h2 {
-    display: none;
+  display: none;
 }
 .leftside-secondcon {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leftside-secondcon button {
+  font-size: 18px;
+  font-weight: 600;
+  gap: 10px;
+}
+.leftside-secondcon button h2 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.composed .leftside-secondcon button {
+  padding: 10px;
+}
+@media (max-width: 1100px) {
+  .dashboard-leftside a {
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
+    text-align: center;
+  }
+  .dashboard-leftside a h2 {
+    font-size: 16px;
+  }
+  .dashboard-leftside button h2 {
+    font-size: 16px;
+  }
+  .dashboard-leftside button {
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }
-.leftside-secondcon h2 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-
-@media(max-width:1100px) {
-    .dashboard-leftside a {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-.dashboard-leftside a h2 {
-        font-size: 16px;
-    }
-.dashboard-leftside button h2 {
-        font-size: 16px;
-    }
-.dashboard-leftside button {
-        align-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-}
-@media(max-width:650px) {
-    .dashboard-leftside {
-        display: none;
-    }
+@media (max-width: 650px) {
+  .dashboard-leftside {
+    display: none;
+  }
 }
