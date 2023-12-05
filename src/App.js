@@ -17,7 +17,9 @@ import AddNewUser from "./Pages/AddNewUser/addNewUser";
 
 function App() {
   const dispatch = useDispatch();
-
+  useEffect(() => {
+    dispatch(fetchUser());
+  }, []);
   useEffect(() => {
     dispatch(loadUser());
     console.log("changed");
