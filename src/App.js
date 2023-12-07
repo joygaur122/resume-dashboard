@@ -14,16 +14,14 @@ import ResumeData from "./Pages/resume-data/resume-data";
 import Templates from "./Pages/Templates/templates";
 import ProtectedRoute from "./Protected/index";
 import AddNewUser from "./Pages/AddNewUser/addNewUser";
+import fetchUser from "./Reducers/authActions";
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchUser());
   }, []);
-  useEffect(() => {
-    dispatch(loadUser());
-    console.log("changed");
-  }, []);
+
 
   const location = useLocation();
 
